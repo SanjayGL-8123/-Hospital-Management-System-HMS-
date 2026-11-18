@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="H2.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-title">
+            <span style="font-size: 32px;">🏥</span>
+            <div>
+                <h1>Hospital Management System</h1>
+                <p style="font-size: 13px; color: #64748b;">Patient Admission &amp; Medical Records Portal</p>
+            </div>
+        </div>
+        <div id="serverStatus" class="server-status">
+            <span class="status-dot"></span> Checking backend...
+        </div>
+    </div>
+
+    <!-- Quick Statistics Overview -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Patients</h3>
+            <div id="statTotal" class="stat-value">0</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #ef4444;">
+            <h3>Currently Admitted</h3>
+            <div id="statAdmitted" class="stat-value">0</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #f59e0b;">
+            <h3>Under Observation</h3>
+            <div id="statObservation" class="stat-value">0</div>
+        </div>
+        <div class="stat-card" style="border-left-color: #10b981;">
+            <h3>Discharged</h3>
+            <div id="statDischarged" class="stat-value">0</div>
+        </div>
+    </div>
+
+    <!-- Patient Registration Form -->
+    <div class="form-card">
+        <h2>Register New Patient</h2>
+        <form id="patientForm">
+            <input type="text" id="name" placeholder="Patient Full Name" required>
+            <input type="number" id="age" placeholder="Age" min="1" max="130" required>
+            <input type="text" id="disease" placeholder="Diagnosis / Disease" required>
+            <input type="text" id="doctor" placeholder="Attending Doctor" required>
+            <select id="status">
+                <option value="Admitted">Admitted</option>
+                <option value="Under Observation">Under Observation</option>
+                <option value="Discharged">Discharged</option>
+            </select>
+            <button type="submit">+ Add Patient</button>
+        </form>
+    </div>
+
+    <!-- Live Patient Records Table -->
+    <div class="table-header-bar">
+        <h2>Patient Records Database</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search by name, doctor, disease...">
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Record ID</th>
+                    <th>Patient Name</th>
+                    <th>Age</th>
+                    <th>Disease</th>
+                    <th>Attending Doctor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="patientTable">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-info">
+        <span>Connected with C Backend &amp; Database</span>
+        <span>Version 2.0 • Real-time Sync</span>
+    </div>
+</div>
+
+<script src="H3.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+ID,Name,Age,Disease,Doctor,Status
+101,"John Doe",45,"Cardiovascular Hypertension","Dr. Robert Smith","Admitted"
+102,"Emily Watson",32,"Type 2 Diabetes Mellitus","Dr. Sarah Jenkins","Under Observation"
+103,"Michael Chang",58,"Acute Bronchitis","Dr. Emily Davis","Admitted"
+104,"Sophia Martinez",24,"Migraine & Neuropathy","Dr. James Wilson","Discharged"
+105,"William Johnson",67,"Osteoarthritis","Dr. Amanda White","Admitted"
+106,"Olivia Taylor",29,"Gastroenteritis","Dr. Robert Smith","Discharged"
+107,"Daniel Anderson",50,"Chronic Kidney Disease","Dr. Lisa Taylor","Admitted"
+108,"Ava Thomas",19,"Allergic Asthma","Dr. Emily Davis","Under Observation"
+109,"David Brown",41,"Fractured Fibula","Dr. Amanda White","Admitted"
+110,"Isabella Garcia",36,"Hyperthyroidism","Dr. Sarah Jenkins","Discharged"
+111,"sanjay",20,"cold","sanju","Admitted"
