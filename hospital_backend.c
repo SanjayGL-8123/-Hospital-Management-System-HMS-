@@ -10,6 +10,25 @@
  * ===================================================================
  */
 
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+
+#if defined(__clang__)
+#ifndef _X86INTRIN_H_INCLUDED
+#define _X86INTRIN_H_INCLUDED
+#endif
+#ifndef _X86GPRINTRIN_H_INCLUDED
+#define _X86GPRINTRIN_H_INCLUDED
+#endif
+#ifndef _IMMINTRIN_H_INCLUDED
+#define _IMMINTRIN_H_INCLUDED
+#endif
+#ifndef _IA32INTRIN_H_INCLUDED
+#define _IA32INTRIN_H_INCLUDED
+#endif
+#endif
+
 #ifdef _MSC_VER
 #pragma comment(lib, "ws2_32.lib")
 #endif

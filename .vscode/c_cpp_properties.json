@@ -5,14 +5,14 @@
       "includePath": [
         "${workspaceFolder}/**",
         "C:/mingw64/x86_64-w64-mingw32/include",
-        "C:/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include",
         "C:/mingw64/include"
       ],
       "defines": [
         "_DEBUG",
         "UNICODE",
         "_UNICODE",
-        "_WIN32"
+        "_WIN32",
+        "WIN32_LEAN_AND_MEAN"
       ],
       "compilerPath": "C:/mingw64/bin/gcc.exe",
       "cStandard": "c11",
